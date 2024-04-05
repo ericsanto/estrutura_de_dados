@@ -4,7 +4,7 @@ class Queues:
         self.size = 0
 
     def push(self, data):
-        self.queue = self.queue + [data]
+        self.queue = [data] + self.queue
         self.size += 1
 
     def is_empty(self):
@@ -38,7 +38,7 @@ queue.push(10)
 queue.push(1)
 queue.push(-1)
 
-#CONSULTANDO TAMANHO DA FILA
+"""#CONSULTANDO TAMANHO DA FILA
 print(f'O tamanho da fila é: {queue.len()}')
 
 #VERIFICANDO O PRIMEIRO ELEMENTO DA FILA
@@ -54,4 +54,4 @@ else:
 queue.dequeue()
 
 #RETORNANDO TODA A FILA
-print(queue.output())
+print(queue.output())"""
